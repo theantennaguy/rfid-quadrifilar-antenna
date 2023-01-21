@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# feed_network-quadrifilar_antenna
+#
+DEF feed_network-quadrifilar_antenna RF 0 40 Y Y 1 F N
+F0 "RF" 0 250 50 H V C CNN
+F1 "feed_network-quadrifilar_antenna" 0 -250 50 H V C CNN
+F2 "" -50 300 50 H I C CNN
+F3 "" -50 300 50 H I C CNN
+DRAW
+S -250 200 250 -200 0 1 0 f
+X IN 1 -350 0 100 R 50 50 1 1 P
+X LOAD1 2 -350 150 100 R 50 50 1 1 P
+X LOAD2 3 -350 -150 100 R 50 50 1 1 P
+X A1 4 350 150 100 L 50 50 1 1 P
+X A2 5 350 50 100 L 50 50 1 1 P
+X A3 6 350 -50 100 L 50 50 1 1 P
+X A4 7 350 -150 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

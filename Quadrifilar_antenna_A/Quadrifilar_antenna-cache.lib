@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# quadrifilar_antenna_quadrifilar_antenna
+#
+DEF quadrifilar_antenna_quadrifilar_antenna AE 0 40 Y Y 1 F N
+F0 "AE" 0 0 50 H V C CNN
+F1 "quadrifilar_antenna_quadrifilar_antenna" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -450 -350 25 0 1 0 N
+C -350 450 25 0 1 0 N
+C 350 -450 25 0 1 0 N
+C 450 350 25 0 1 0 N
+S -500 500 300 400 0 1 0 N
+S -400 -500 -500 300 0 1 0 N
+S 400 500 500 -300 0 1 0 N
+S 500 -400 -300 -500 0 1 0 N
+X P1 1 -350 350 100 U 50 50 1 1 P
+X P2 2 350 350 100 R 50 50 1 1 P
+X P3 3 350 -350 100 D 50 50 1 1 P
+X P4 4 -350 -350 100 L 50 50 1 1 P
+X GND 5 950 150 100 R 50 50 1 1 P
+X GND 6 950 50 100 R 50 50 1 1 P
+X GND 7 950 -50 100 R 50 50 1 1 P
+X GND 8 950 -150 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

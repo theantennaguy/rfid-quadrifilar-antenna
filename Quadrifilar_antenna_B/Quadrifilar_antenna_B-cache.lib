@@ -1,0 +1,82 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_Coaxial
+#
+DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# quadrifilar_antenna_feed_network
+#
+DEF quadrifilar_antenna_feed_network RF 0 40 Y Y 1 F N
+F0 "RF" 0 550 50 H V C CNN
+F1 "quadrifilar_antenna_feed_network" 0 -550 50 H V C CNN
+F2 "" -50 300 50 H I C CNN
+F3 "" -50 300 50 H I C CNN
+DRAW
+S -250 500 250 -500 0 1 0 f
+X IN 1 -350 400 100 R 50 50 1 1 P
+X GND 10 350 -200 100 L 50 50 1 1 P
+X GND 11 350 -300 100 L 50 50 1 1 P
+X GND 12 350 -400 100 L 50 50 1 1 P
+X LOAD1 2 -350 -100 100 R 50 50 1 1 P
+X LOAD2 3 -350 -200 100 R 50 50 1 1 P
+X A1 4 350 400 100 L 50 50 1 1 P
+X A2 5 350 300 100 L 50 50 1 1 P
+X A3 6 350 200 100 L 50 50 1 1 P
+X A4 7 350 100 100 L 50 50 1 1 P
+X GND 9 350 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

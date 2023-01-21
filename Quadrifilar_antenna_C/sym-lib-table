@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "quadrifilar_antenna")(type "Legacy")(uri "C:/Users/ricmr/Projects/antenna-projects/Quadrifilar_antenna/symbol_lib/quadrifilar_antenna.lib")(options "")(descr ""))
+  (lib (name "Quadrifilar_antenna_C-rescue")(type "Legacy")(uri "${KIPRJMOD}/Quadrifilar_antenna_C-rescue.lib")(options "")(descr ""))
+)
